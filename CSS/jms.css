@@ -1,1 +1,21 @@
-/* font-family: 'Montserrat', sans-serif; */
+h1{
+text-align: center;
+color: rgb(0, 0, 0);
+}
+
+.hiring {
+    background: url(../Imágenes/hiring.jpg) no-repeat;
+    background-size: cover;
+    height: 50vh;
+    min-height: 100px;
+    color: aqua;
+}
+
+h2{
+    text-align: center;
+color: rgb(18, 142, 57);
+}
+
+.card{
+    width: 50px;
+}
