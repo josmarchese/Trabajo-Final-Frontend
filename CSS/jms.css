@@ -26,3 +26,8 @@ color: rgb(18, 142, 57);
     padding: 0;
     list-style: symbols();
 }
+
+.mapa iframe {
+    width: 100%;
+}
+
