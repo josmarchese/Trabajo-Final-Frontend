@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Raleway:wght@100&display=swap" rel="stylesheet">
   <title> Joma RRHH </title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -20,190 +20,40 @@
   <br>
   <br>
 
-  <h1> Joma RRHH <img src="Imágenes/joma.jpg" alt="joma" class="rounded float-middle" width="200 px"> </h1>
-
-
   <nav class="navbar navbar-expand-lg bg-light fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#historia"> ¿Quienes somos?
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#nosotros"> Nuestros servicios </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#subircv"> Subí tu CV </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#busquedas" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Búsquedas activas
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#subircv"> Subí tu CV </a></li>
-              <li><a class="dropdown-item" href="#busquedas"> Búsquedas activas</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#subircv"> Armá tu CV </a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="Buscar">
-          <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
-          <button class="btn btn-outline-success" type="submit">Buscar</button>
-        </form>
-      </div>
+        <a class="navbar-brand" href="#">
+            <img id="logo" src="Imágenes/joma.jpg" width="200px">
+        </a>
+        <a class="navbar-brand" href="#historia"> ¿Quienes somos? </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ol class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#nosotros"> Nuestros servicios </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto"> Contactanos </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/subircv"> Subí tu CV </a>
+                </li>
+            </ol>
+            <form class="d-flex" role="Buscar">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
     </div>
-  </nav>
+</nav> <br>
 
-  <div class="container-fluid">
-    <div id="home" class="row align-items-center hiring">
-      <p class="text-end">"Hacemos posible lo que <br> creías inalcanzable" </p>
-      <div class="col-lg-3 offset-lg-2">
-      </div>
-    </div>
+  <!-- CARRUSEL -->
 
-
-    <div class="row my-3">
-      <div id="novedades" class="col-md-5 offset-md-2 py-3">
-        <h2> NOVEDADES </h2>
-        <ul class="lista-novedades">
-
-          <li> <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <img src="Imágenes/trends.jpeg"
-                width="100 px" alt=""> Nuevas tendencias en selección </a>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevas tendencias en selección de personal</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Nuevas tendencias próximamente
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-
-          <li> <a href="#"> <img src="Imágenes/cv.jpg" width="100 px" alt=""> ¿Cómo diseñar tu CV? </a>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"> ¿Cómo diseñar tu CV? </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Próximamente
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-
-          <li> <a href="#"> <img src="Imágenes/servicios.jpg" width="100 px" alt=""> Extendemos nuestros servicios </a>
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Extendemos nuestros servicios </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Próximamente
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </li>
-          <li> <a href="#"> <img src="Imágenes/canales.jpg" width="100 px" alt=""> Nuevos canales de comunicación </a>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Nuevos canales de comunicación </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Próximamente
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-          <li> <a href="#"> <img src="Imágenes/bolsa.jpg" width="100 px" alt=""> Nuestra bolsa de empleo </a>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-              aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel"> Nuestra bolsa de empleo </h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
-                  <div class="modal-body">
-                    Próximamente
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
-                    <button type="button" class="btn btn-primary">Guardar</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <!-- Nuevos espacios --/ ¿Dónde encontrarnos? 
-- Agregar Mapa 
-- Volver Carrusel las búsquedas 
-- Lista de novedades --// -->
-      </div>
-
-
-      </ul>
-
-      <br>
-      <h2> BÚSQUEDAS ACTIVAS </h2>
-
-      <br>
-    </div>
-
-  </div>
-
-  <div id="busquedas" class="carousel slide" data-bs-ride="false">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
         aria-current="true" aria-label="Slide 1"></button>
@@ -211,28 +61,36 @@
         aria-label="Slide 2"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
         aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="Imágenes/calidad.jpg" class="d-block w-100" alt="analista de calidad">
+        <img src="Imágenes/seleccion.jpg" class="d-block w-100" alt="colores">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Analista de Calidad</h5>
-          <p> - Full time. <br> - Experiencia en Calidad sectores industriales. <br> Publicada: junio 2022 </p>
+          <h1> Selección de personal </h1>
+          <p class="descrip"> Procesos end to end de reclutamiento y selección de personal. </p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="Imágenes/automotores.jpg" class="d-block w-100" alt="Programador de materiales">
+        <img src="Imágenes/psico.jpg" class="d-block w-100" alt="test">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Programador de Materiales</h5>
-          <p>- Full time. <br> - Graduados de Ingeniería Industrial <br> - Experiencia similar de 3
-            años. <br> Publicada: julio 2022 </p>
+          <h1> Valoraciones psicotécnicas </h>
+          <p class="descrip"> Para cada posición que se vaya a cubrir, la valoración psicotécnica adecuada </p>
         </div>
       </div>
       <div class="carousel-item">
-        <img src="Imágenes/textil.jpg" class="d-block w-100" alt="Jefe de taller">
+        <img src="Imágenes/rh.jpg" class="d-block w-100" alt="...">
         <div class="carousel-caption d-none d-md-block">
-          <h5>Jefe de taller </h5>
-          <p>Full time. - Secundario finalizado - Experiencia en industria textil <br> Publicada: junio 2022</p>
+          <h1> Consultoría a empresas </h1>
+          <p class="descrip"> A través de un proceso de Diagnóstico Organizacional, daremos el primer paso hacia el cambio deseado. </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imágenes/orientación.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1> Orientación Vocacional </h1>
+          <p class="descrip"> Procesos personalizados de orientación vocacional y laboral. </p>
         </div>
       </div>
     </div>
@@ -245,125 +103,240 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+  <br>
 
-  <!--FIN DE BÚSQUEDAS ACTIVAS -->
 
   <!--COMIENZA HISTORIA  -->
-  <h2> NUESTRA HISTORIA </h2>
-  <div id="historia" class="row align-items-center py-4">
-    <div class="col-lg-2 col-md-3 offset-lg-2 d-none d-sm-block">
-      <img src="Imágenes/2017.jpg" alt="2017" class="img-fluid">
+  <div id="contenedor-historia" id="historia">
+    <br> <br>
+    <div class="col-md-3">
     </div>
-    <div class="col-lg-2 col-md-3 d-none d-sm-block">
-      <img src="Imágenes/2018.png" alt="2018" class="img-fluid">
+    <div id="historia" class="row align-items-center py-4">
     </div>
-    <div class="col-12 d-sm-none">
-      <img src="Imágenes/2022.jpg" alt="2022" class="img-fluid">
-    </div>
-    <div class="col-lg-4 col-md-6 mt-4 mt-sm-0">
-      <h3>Nuestra historia</h3>
-      <p> Todo comenzó por el año 2017. Allí fundamos nuestra consultora. En 2018 se sumaron nuevos socios.
-        Los clientes fueron creciendo, hasta llegar a 2022, donde ya somos referentes en Reclutamiento y Selección
-        dentro de Argentina.
+    <div class="col-md-7 offset-md-3">
+      <h2> NUESTRA HISTORIA </h2> <br> <br>
+      <p> Desde el año 2020, como consultores de Recursos Humanos, nos especializamos en la selección de personal para
+        empresas.
+        <br>
+      <p> MISIÓN <br>
+        Nuestro objetivo es hacer coincidir, de la mejor manera posible, candidatos y puestos de trabajo vacantes.
+        <br>
+        <br>
+        VISIÓN <br>
+        Creemos que no todas las personas son idóneas para todos los puestos, así como también no todos los puestos
+        son
+        idóneos a todas las personas. <br>
+
+        <br> VALORES <br>
+      <ul>
+        <li> Transparencia </li>
+        <li> Eficiencia </li>
+        <li> Calidez </li>
+        <li> Responsabilidad </li> <br>
+
+      </ul>
       </p>
     </div>
-
+  </div>
   </div>
 
-  <!--NOS ELIGEN -->
-  <h2>NOS ELIGEN</h2>
+  <!--BÚSQUEDAS ACTIVAS -->
+
+  <br>
+  <h2>BÚSQUEDAS ACTIVAS</h2> <br>
+  <div id="busquedas"></div>
   <div class="row">
     <div class="col-md-3">
       <div class="card w-75">
-        <img src="Imágenes/equis.jpg" class="card-img-top" alt="X">
+        <img src="Imágenes/iauto.jpg" class="card-img-top" alt="X">
         <div class="card-body">
-          <h5 class="card-title">Equis S.A.</h5>
-          <p class="card-text"> Desde 2017.</p>
+          <h4 class="card-title"> 5 vacantes </h4>
         </div>
       </div>
     </div>
     <div class="col-md-3">
       <div class="card w-75">
-        <img src="Imágenes/eme.jpeg" class="card-img-top" alt="M">
+        <img src="Imágenes/itextil.jpg" class="card-img-top" alt="M">
         <div class="card-body">
-          <h5 class="card-title">Eme S.A.</h5>
-          <p class="card-text">Desde 2018.</p>
+          <h4 class="card-title">4 vacantes</h4>
+
         </div>
       </div>
     </div>
     <div class="col-md-3">
       <div class="card w-75">
-        <img src="Imágenes/zeta.jpg" class="card-img-top" alt="z">
+        <img src="Imágenes/infor.jpg" class="card-img-top" alt="z">
         <div class="card-body">
-          <h5 class="card-title">Zeta S.R.L</h5>
-          <p class="card-text">Desde 2018.</p>
+          <h4 class="card-title">16 vacantes</h4>
+
         </div>
       </div>
     </div>
     <div class="col-lg-3">
       <div class="card w-75">
-        <img src="Imágenes/letrak.jpg" class="card-img-top" alt="k">
+        <img src="Imágenes/agro.jpg" class="card-img-top" alt="k">
         <div class="card-body">
-          <h5 class="card-title">Ka S.R.L.</h5>
-          <p class="card-text">Desde 2020.</p>
+          <h4 class="card-title">3 vacantes</h4>
+
         </div>
       </div>
     </div>
   </div>
 
+  <!-- NOVEDADES -->
+  <br>
+  <div class="row my-3">
+    <div id="novedades" class="col-md-5 offset-md-4 py-3">
+      <h2> NOVEDADES </h2> <br>
+      <ul class="lista-novedades">
+
+        <li> <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> <img src="Imágenes/trends.jpeg"
+              width="100 px" alt=""> Nuevas tendencias en selección </a> <br>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevas tendencias en selección de personal</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Nuevas tendencias próximamente
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li> <br>
+        <li> <a href="#"> <img src="Imágenes/servicios.jpg" width="100 px" alt=""> Extendemos nuestros servicios </a>
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true"> <br>
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"> Extendemos nuestros servicios </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Próximamente
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </li> <br>
+        <li> <a href="#"> <img src="Imágenes/canales.jpg" width="100 px" alt=""> Nuevos canales de comunicación </a>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"> Nuevos canales de comunicación </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Próximamente
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li> <br>
+        <li> <a href="/subircv"> <img src="Imágenes/bolsa.jpg" width="100 px" alt=""> Nuestra bolsa de empleo </a>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"> Nuestra bolsa de empleo </h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  Próximamente
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"> Cerrar </button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li> <br>
+
+        <!-- Nuevos espacios --/ ¿Dónde encontrarnos? 
+- Agregar Mapa 
+- Volver Carrusel las búsquedas 
+- Lista de novedades --// -->
+    </div>
 
 
-  <!--MAPA + FORMULARIO -->
-  <div id=Contacto class="row py-4">
-    <div class="col-md-4  offset-md-1">
-      <h2>VISITANOS</h2>
-      <div class="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.614909137598!2d-64.1912404846662!3d-31.424734381401365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f5287e659%3A0x1470678d8f7eec0!2sObispo%20Trejo%20y%20Sanabria%20765%2C%20X5000IYO%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1667181207617!5m2!1ses!2sar"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe> Obispo trejo 765, Córdoba. </iframe>
+    </ul>
+
+    <!--MAPA + FORMULARIO -->
+    <div id=Contacto class="row py-4">
+      <div class="col-md-4  offset-md-1">
+        <h2>VISITANOS</h2>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.614909137598!2d-64.1912404846662!3d-31.424734381401365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28f5287e659%3A0x1470678d8f7eec0!2sObispo%20Trejo%20y%20Sanabria%20765%2C%20X5000IYO%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1667181207617!5m2!1ses!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe> Obispo trejo 765, Córdoba. </iframe>
+        </div>
+
       </div>
 
+      <div id="contacto" class="col-md-6 mt-4 mt-sm-0">
+        <h2>CONTACTANOS</h2>
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" id="nombre">
+          </div>
+          <div class="col-md-6">
+            <label for="apellido" class="form-label">Apellido</label>
+            <input type="text" class="form-control" id="apellido">
+          </div>
+          <div class="col-md-12">
+            <label for="ciudad" class="form-label">Ciudad</label>
+            <input type="text" class="form-control" id="ciudad">
+          </div>
+
+          <div class="col-md-12">
+            <label for="mensaje" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+          </div>
+
+          <div class="col-12">
+            <button type="submit" class="btn brn-primary">Enviar</button>
+          </div>
+
+      </div>
     </div>
 
-    <div id="subircv" class="col-md-6 mt-4 mt-sm-0">
-      <h2>ADJUNTAR CURRÍCULUM VITAE</h2>
-      <form class="row g-3">
-        <div class="col-md-6">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre">
-        </div>
-        <div class="col-md-6">
-          <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" class="form-control" id="apellido">
-        </div>
-        <div class="col-md-12">
-          <label for="ciudad" class="form-label">Ciudad</label>
-          <input type="text" class="form-control" id="ciudad">
-        </div>
+    </form>
 
-        <div class="col-md-12">
-          <label for="mensaje" class="form-label">Mensaje</label>
-          <textarea class="form-control" id="mensaje" rows="3"></textarea>
-        </div>
-        <div class="col-md-12">
-          <label for="formFileMultiple" class="form-label">Adjuntar Currículum actualizado</label>
-          <input class="form-control" type="file" id="formFileMultiple" multiple>
-        </div>
-      
+    <footer>
+      <p class="text-center"> Diseñado por Josefina Marchese | 2022 </p>
+    </footer>
 
-        <div class="col-12">
-          <button type="submit" class="btn brn-primary">Enviar</button>
-        </div>
-
-    </div>
-  </div>
-  
-  </form>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>

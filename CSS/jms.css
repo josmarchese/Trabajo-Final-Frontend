@@ -1,27 +1,26 @@
-h1{
-text-align: center;
-color: rgb(0, 0, 0);
+h1 {
+    text-align: center;
+    color: #0ba18c ;
 }
 
 .hiring {
     background: url(../Imágenes/hiring.jpg) no-repeat;
     background-size: cover;
-    height: 50vh;
+    height: 60vh;
     min-height: 100px;
-    color: rgb(166, 49, 23);
-    font-size: xx-large;
 }
 
-h2{
+h2 {
     text-align: center;
-color: rgb(18, 142, 57);
+    color: rgb(18, 142, 57);
+    font-size: xxx-large;
 }
 
-.card{
+.card {
     width: 50px;
 }
 
-.lista-novedades { 
+.lista-novedades {
     margin: 0;
     padding: 0;
     list-style: symbols();
@@ -29,5 +28,47 @@ color: rgb(18, 142, 57);
 
 .mapa iframe {
     width: 100%;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 700px;
+}
+
+h5 {
+    font-size: xx-large;
+}
+
+p {
+    font-size: x-large;
+}
+
+#contenedor-historia {
+
+    background-color: #f6f6f6;
+    color: rgb(10, 0, 0);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+li {
+    font-size: x-large;
+}
+
+footer {
+    background-color: rgb(219, 219, 219);
+}
+
+img.micv {
+    width: 500px;
+}
+
+.descrip{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+    color: #0ba18c
+
+}
+
+img.selection{
+    width: 750px;
 }
 
