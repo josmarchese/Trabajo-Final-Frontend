@@ -4,9 +4,12 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
+require('dotenv').config();
+
 var indexRouter = require('./routes/index');
 var subircvRouter = require('./routes/subircv');
 var serviciosRouter = require('./routes/servicios');
+var loginRouter = require('./routes/admin/login');
 
 var app = express();
 
@@ -23,6 +26,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/subircv', subircvRouter);
 app.use('/servicios', serviciosRouter);
+app.use('/admin/login', loginRouter);
 
 app.get('/servicios', function (req, res) {
   res.render('servicios')
@@ -32,7 +36,7 @@ app.get('/', function (req, res) {
   res.render('index')
 });
 
-app.get('/subircv', function (req, res) {
+app.post('/subircv', function (req, res) {
   res.render('subircv')
 });
 
