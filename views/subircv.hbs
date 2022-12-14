@@ -5,18 +5,19 @@
   <h1> Subir CV a base de datos </h1>
 
   <h2> Datos personales </h2>
+
   <form class="row g-3" action="/subircv" method="post">
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" id="nombre" name="nombre">
+   <div class="col-md-6">
+      <label for="nombre" class="form-label">Nombre</label>
+      <input type="text" class="form-control" id="nombre" name="nombre">
     </div>
-    <div class="col">
-      <input type="text" class="form-control" placeholder="Apellido" aria-label="Apellido" id="apellido" name="apellido">
-    </div>
-  </form>
-  <form class="row g-3" action="/subircv" method="post">
     <div class="col-md-6">
-      <label for="inputEmail4" class="form-label">Email</label>
-      <input type="email" class="form-control" id="inputemail" name="email">
+      <label for="apellido" class="form-label"> Apellido </label>
+      <input type="text" class="form-control" id="apellido" name="apellido">
+    </div>
+    <div class="col-md-6">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" name="email">
     </div>
     <div class="col-md-6">
       <label for="inputdate" class="form-label"> Fecha de nacimiento</label>
@@ -42,15 +43,11 @@
       <label for="dni" class="form-label"> DNI </label>
       <input type="text" class="form-control" id="dni" name="dni">
     </div>
-    <div class="col-12">
-      <button type="submit" class="btn btn-primary">Enviar</button>
-    </div>
-  </form>
-
+  
   <h2> Formación </h2>
   <!-- Formación 1 -->
 
-  <form class="row g-3" action="/subircv" method="post">
+  {{!-- <form class="row g-3" action="/subircv" method="post"> --}}
     <div class="col-md-4">
       <label for="centro" class="form-label"> Centro educativo </label>
       <input type="text" class="form-control" id="centro" name="centro">
@@ -72,7 +69,7 @@
     </div>
     <div class="col-md-3">
       <label for="date2" class="form-label"> Desde </label>
-      <input type="date2" class="form-control" id="dale2" name="date2">
+      <input type="date" class="form-control" id="dale2" name="date2">
     </div>
     <div class="col-md-3">
       <label for="date3" class="form-label"> Hasta </label>
@@ -114,7 +111,7 @@
     </div>
     <div class="col-md-3">
       <label for="date2" class="form-label"> Desde </label>
-      <input type="date2" class="form-control" id="dale2" name="date2">
+      <input type="date" class="form-control" id="dale2" name="date2">
     </div>
     <div class="col-md-3">
       <label for="date3" class="form-label"> Hasta </label>

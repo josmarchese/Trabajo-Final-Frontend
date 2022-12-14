@@ -2,12 +2,12 @@ var express = require('express');
 var router = express.Router();
 var nodemailer = require('nodemailer');
 
-/* GET home page. */
-router.post('/subircv', function(req, res, next) {
-  res.render('subircv');
-});
 
-router.post('/subircv', async (req, res, next) => {
+router.get('/', function(req, res, next) {
+  res.render('subircv');
+}); 
+
+router.post('/', async (req, res, next) => {
 
   console.log(req.body) 
   
@@ -34,24 +34,24 @@ router.post('/subircv', async (req, res, next) => {
   
     var obj = {
     to: 'josefina.marchese@gmail.com',
-    subject: 'Contacto desde Joma RRHH',
+    subject: 'Carga de CV',
     html: nombre + " " + apellido + address + " se contactó a través de Joma RRHH y envió los siguientes datos: " <br> 
     + email + date + city + country + dni + centro + nivel + título + date2 + date3 + check + check2 + cargo + empresa + país + tareas     
   }
     
-  var transporter = nodemailer.createTransport({
+  var transport = nodemailer.createTransport({
     host: process.env.SMTP_HOST,
     port: process.env.SMTP_PORT,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS
     }
-  }) 
+  }); 
   
-  var info = await transporter.sendMail(obj);
+  var info = await transport.sendMail(obj);
   
   res.render('subircv', {
-    message: 'Mensaje enviado correctamente', 
+    message: 'Mensaje enviado correctamente' 
     });
     
      }); //cierra petición de POST
