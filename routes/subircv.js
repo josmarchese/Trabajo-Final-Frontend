@@ -35,7 +35,7 @@ router.post('/', async (req, res, next) => {
     var obj = {
     to: 'josefina.marchese@gmail.com',
     subject: 'Carga de CV',
-    html: nombre + " " + apellido + address + " se contactó a través de Joma RRHH y envió los siguientes datos: " <br> 
+    html: nombre + " " + apellido + address + " se contactó a través de Joma RRHH y envió los siguientes datos: " + "<br> " 
     + email + date + city + country + dni + centro + nivel + título + date2 + date3 + check + check2 + cargo + empresa + país + tareas     
   }
     
