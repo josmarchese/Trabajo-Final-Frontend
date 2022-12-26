@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 require('dotenv').config();
 var session = require('express-session');
+var fileUpload = require('express-fileupload');
 
 var indexRouter = require('./routes/index');
 var subircvRouter = require('./routes/subircv');
@@ -44,7 +45,10 @@ secured = async (req, res, next) => {
     }
   }
 
-
+app.use(fileUpload({
+  useTempFiles: true, 
+  tempFileDir: '/tmp/'
+}));
 
 app.use('/', indexRouter);
 app.use('/subircv', subircvRouter);
